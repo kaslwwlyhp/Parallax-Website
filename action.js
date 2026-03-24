@@ -40,10 +40,17 @@ window.addEventListener('scroll', function () {
         splash.style.top = 20 + value * -0.3 + 'px';
     }
 
-    //Move fishes from bottom to top
+    //Move fishes diagonally: left-bottom -> right-top
+    fish1.style.left = value * 0.35 - 160 + 'px';
     fish1.style.bottom = value * 0.35 - 120 + 'px';
+
+    fish2.style.left = value * 0.4 - 320 + 'px';
     fish2.style.bottom = value * 0.45 - 420 + 'px';
+
+    fish3.style.left = value * 0.3 - 460 + 'px';
     fish3.style.bottom = value * 0.3 - 760 + 'px';
+
+    fish4.style.left = value * 0.5 - 680 + 'px';
     fish4.style.bottom = value * 0.55 - 1080 + 'px';
 })
 
